@@ -68,7 +68,8 @@ const Home = () => {
     margin: 1rem;
   `;
   const ImageContainer = styled.img`
-    max-width: 40vw;
+  width: 50%;
+  height: auto;
   `;
   return (
     <>

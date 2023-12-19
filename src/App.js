@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Skills from "./Components/Skills";
 import Resume from "./Components/Resume";
+import Social from "./Components/Social";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -12,11 +13,12 @@ function App() {
     <>
       <Header />
       <Home />
-      {/* <About/> */}
-      {/* <Skills/> */}
-      {/* <Contact/> */}
+      <About/>
+      <Skills/>
+      <Contact/>
       {/* <Resume/> */}
-      {/* <Footer /> */}
+      <Social/>
+      <Footer />
     </>
   );
 }

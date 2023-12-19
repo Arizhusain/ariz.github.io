@@ -7,12 +7,17 @@ import StyleConstants from "../Common/StyleConstants";
 const Header = () => {
   const Container = styled.div`
     background-color: ${StyleConstants.light.whiteColor};
+    position: sticky;
+    top: 0;
+    display: flex;
+    box-shadow: 0px 0px 10px;
   `;
   const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 1rem 4rem;
+    width: 100%;
   `;
   const LogoWrapper = styled.div`
     width: 30%;
