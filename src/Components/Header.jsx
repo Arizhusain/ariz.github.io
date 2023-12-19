@@ -1,60 +1,62 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Wrapper } from "./common/Styles";
-import logo from "../assets/logo.png";
-import variableConstants from "./common/constants";
+import PortfolioLogo from "../assets/logo.png";
+import styleConstants from "../Common/StyleConstants";
+import StyleConstants from "../Common/StyleConstants";
 
 const Header = () => {
-  const Header = styled.header`
-    position: fixed;
-    width: 70vw;
-    height: 4rem;
-    background: ${variableConstants.whiteColor};
-    top: 0;
+  const Container = styled.div`
+    background-color: ${StyleConstants.light.whiteColor};
+  `;
+  const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #00000038;
+    margin: 1rem 4rem;
+  `;
+  const LogoWrapper = styled.div`
+    width: 30%;
   `;
   const Logo = styled.img`
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    transform: rotate(-45deg);
+    height: 2rem;
   `;
-  const Navbar = styled.section`
+  const LinkWrapper = styled.div`
+    width: 30%;
+  `;
+  const AnchorLinks = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-around;
   `;
-  const AnchorNav = styled.a`
+  const SingleLink = styled.a`
     text-decoration: none;
-    font-size: 13px;
-    color: ${variableConstants.greyColor};
-    cursor: pointer;
-    font-weight: 600;
+    font-weight: bold;
+    color: ${styleConstants.light.blackColor};
     &:hover {
-      text-decoration: underline;
+      color: ${styleConstants.light.yellowColor};
     }
   `;
   return (
-    <Container>
-      <Wrapper>
-        <Header>
-          <AnchorNav href="/">
-            <Logo src={logo} />
-          </AnchorNav>
-          <Navbar>
-            <AnchorNav href="#">HOME</AnchorNav>
-            <AnchorNav href="#">ABOUT</AnchorNav>
-            <AnchorNav href="#">EXPERIENCE</AnchorNav>
-            <AnchorNav href="#">CONTACT</AnchorNav>
-            <AnchorNav href="#">RESUME</AnchorNav>
-          </Navbar>
-        </Header>
-      </Wrapper>
-    </Container>
+    <>
+      <Container>
+        <Wrapper>
+          <LogoWrapper>
+            <SingleLink href="/">
+              <Logo src={PortfolioLogo} />
+            </SingleLink>
+          </LogoWrapper>
+          <LinkWrapper>
+            <AnchorLinks>
+              <SingleLink href="/">Home</SingleLink>
+              <SingleLink href="#">About</SingleLink>
+              <SingleLink href="#">Skills</SingleLink>
+              <SingleLink href="#">Contact</SingleLink>
+              <SingleLink href="#">Resume</SingleLink>
+            </AnchorLinks>
+          </LinkWrapper>
+        </Wrapper>
+      </Container>
+    </>
   );
 };
 
