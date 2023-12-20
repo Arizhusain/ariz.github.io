@@ -134,13 +134,13 @@ const Contact = () => {
                 <ItemIcon>
                   <FontAwesomeIcon icon={faMailBulk} />
                 </ItemIcon>
-                <ItemIconDesc>arifhusainsoudagar01@gmail.com</ItemIconDesc>
+                <ItemIconDesc>arif@arizdev.com</ItemIconDesc>
               </ContactListItem>
               <ContactListItem>
                 <ItemIcon>
                   <FontAwesomeIcon icon={faPhone} />
                 </ItemIcon>
-                <ItemIconDesc>+91-7358236715</ItemIconDesc>
+                <ItemIconDesc>+91-9876543210</ItemIconDesc>
               </ContactListItem>
             </ContactList>
           </SupportContainer>
