@@ -8,6 +8,7 @@ const Footer = () => {
     align-items: center;
     justify-content: center;
     background-color: ${styleConstants.light.greenColor};
+    margin-top: 1rem;
   `;
   const FooterWrapper = styled.div`
     width: 70vw;

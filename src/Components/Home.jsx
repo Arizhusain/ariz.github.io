@@ -12,15 +12,26 @@ const Home = () => {
     align-items: center;
     justify-content: space-between;
     background-color: ${styleConstants.light.greenColor};
+    @media only screen and (max-width: 400px) {
+      flex-direction: column;
+    }
   `;
   const TextContainer = styled.div`
     padding-left: 10rem;
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+      margin: 5rem 0rem;
+      padding-left: 2rem;
+    }
   `;
   const Greet = styled.h1`
     color: ${styleConstants.light.yellowColor};
     font-size: 1.5rem;
+    @media only screen and (max-width: 400px) {
+      font-size: 1rem;
+    }
   `;
   const DisplayName = styled.h1`
     color: ${styleConstants.light.whiteColor};
@@ -32,6 +43,9 @@ const Home = () => {
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
+    @media only screen and (max-width: 400px) {
+      font-size: 2rem;
+    }
     @keyframes typing {
       from {
         width: 0;
@@ -47,6 +61,9 @@ const Home = () => {
   const SkillsContainer = styled.div`
     height: 50px;
     overflow: hidden;
+    @media only screen and (max-width: 400px) {
+      height: 2rem;
+    }
   `;
   const SkillList = styled.ul`
     animation: move 3s cubic-bezier(1, -0.27, 0, 1.51) infinite alternate;
@@ -61,15 +78,35 @@ const Home = () => {
         transform: translateY(-110px);
       }
     }
+    @media only screen and (max-width: 400px) {
+      padding-left: 1rem;
+      @keyframes move {
+        0% {
+          transform: translateY(-10px);
+        }
+        25% {
+          transform: translateY(-48px);
+        }
+        100% {
+          transform: translateY(-87px);
+        }
+      }
+    }
   `;
   const Skill = styled.li`
     color: ${styleConstants.light.yellowColor};
     font-size: 2rem;
     margin: 1rem;
+    @media only screen and (max-width: 400px) {
+      font-size: 1.2rem;
+    }
   `;
   const ImageContainer = styled.img`
-  width: 50%;
-  height: auto;
+    width: 50%;
+    height: auto;
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+    }
   `;
   return (
     <>

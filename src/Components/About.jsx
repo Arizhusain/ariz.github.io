@@ -9,6 +9,9 @@ const About = () => {
     align-items: center;
     justify-content: center;
     background-color: #f1f0f0;
+    @media only screen and (max-width: 400px) {
+      height: 50vh;
+    }
   `;
   const AboutWrapper = styled.div`
     display: flex;
@@ -16,14 +19,17 @@ const About = () => {
     justify-content: center;
     flex-direction: column;
     width: 50%;
+    @media only screen and (max-width: 400px) {
+     width: 80%;
+    }
   `;
   const AboutHeading = styled.h1`
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
     color: ${styleConstants.light.greenColor};
   `;
   const AboutParagraph = styled.p`
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     color: ${styleConstants.light.blackColor};
   `;

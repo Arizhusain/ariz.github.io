@@ -1,8 +1,4 @@
-import {
-  faMailBulk,
-  faMap,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk, faMap, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
@@ -16,6 +12,9 @@ const Contact = () => {
     justify-content: center;
     background-color: #f1f0f0;
     flex-direction: column;
+    @media only screen and (max-width: 400px) {
+      height: auto;
+    }
   `;
   const ContactWrapper = styled.div`
     display: flex;
@@ -24,9 +23,17 @@ const Contact = () => {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+    @media only screen and (max-width: 400px) {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
   `;
   const SupportContainer = styled.div`
     width: 50%;
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+    }
   `;
   const ContactList = styled.div`
     width: 100%;
@@ -45,11 +52,18 @@ const Contact = () => {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: 400px) {
+      height: 50px;
+      width: 50px;
+    }
   `;
   const ItemIconDesc = styled.p`
     margin-left: 2rem;
     font-size: 1rem;
     font-weight: 900;
+    /* @media only screen and (max-width: 400px) {
+      font-size: .8rem;
+    } */
   `;
   const AboutContainer = styled.div`
     display: flex;
@@ -58,6 +72,9 @@ const Contact = () => {
     justify-content: space-between;
     height: 50%;
     width: 50%;
+    @media only screen and (max-width: 400px) {
+      width: 80%;
+    }
   `;
   const AboutInput = styled.input`
     border: none;
@@ -66,6 +83,10 @@ const Contact = () => {
     border-radius: 2rem;
     padding: 1rem;
     margin-bottom: 2rem;
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+      padding: .5rem;
+    }
   `;
   const Button = styled.button`
     border: none;

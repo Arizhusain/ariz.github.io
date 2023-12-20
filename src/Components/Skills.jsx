@@ -14,6 +14,9 @@ const Skills = () => {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: 400px) {
+      height: 70vh;
+    }
   `;
   const SkillWrapper = styled.div`
     display: flex;
@@ -32,6 +35,10 @@ const Skills = () => {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    @media only screen and (max-width: 400px) {
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
   `;
   const SkillList = styled.li`
     display: flex;
@@ -39,6 +46,10 @@ const Skills = () => {
     justify-content: center;
     flex-direction: column;
     list-style: none;
+    @media only screen and (max-width: 400px) {
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
   `;
   const SlillImage = styled.img`
     height: 100px;
