@@ -7,6 +7,7 @@ import StyleConstants from "../Common/StyleConstants";
 const Header = () => {
   const Container = styled.div`
     background-color: ${StyleConstants.light.whiteColor};
+    background-image: linear-gradient(to right, ${StyleConstants.light.whiteColor}, ${StyleConstants.light.greenColor});
     position: sticky;
     top: 0;
     display: flex;
@@ -36,7 +37,7 @@ const Header = () => {
   const SingleLink = styled.a`
     text-decoration: none;
     font-weight: bold;
-    color: ${styleConstants.light.blackColor};
+    color: ${styleConstants.light.whiteColor};
     &:hover {
       color: ${styleConstants.light.yellowColor};
     }
@@ -52,11 +53,11 @@ const Header = () => {
           </LogoWrapper>
           <LinkWrapper>
             <AnchorLinks>
-              <SingleLink href="/">Home</SingleLink>
-              <SingleLink href="#">About</SingleLink>
-              <SingleLink href="#">Skills</SingleLink>
-              <SingleLink href="#">Contact</SingleLink>
-              <SingleLink href="#">Resume</SingleLink>
+              <SingleLink href="#home">Home</SingleLink>
+              <SingleLink href="#about">About</SingleLink>
+              <SingleLink href="#skills">Skills</SingleLink>
+              <SingleLink href="#resume">Resume</SingleLink>
+              <SingleLink href="#contact">Contact</SingleLink>
             </AnchorLinks>
           </LinkWrapper>
         </Wrapper>

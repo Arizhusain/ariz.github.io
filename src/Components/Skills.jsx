@@ -49,7 +49,7 @@ const Skills = () => {
   `;
   return (
     <>
-      <SkillContainer>
+      <SkillContainer id="skills">
         <SkillWrapper>
           <SkillHeading>Skills</SkillHeading>
           <SkillListWrapper>

@@ -29,7 +29,7 @@ const About = () => {
   `;
   return (
     <>
-      <AboutContainer>
+      <AboutContainer id="about">
         <AboutWrapper>
           <AboutHeading>About Me</AboutHeading>
           <AboutParagraph>

@@ -73,7 +73,7 @@ const Home = () => {
   `;
   return (
     <>
-      <Container>
+      <Container id="home">
         <Wrapper>
           <TextContainer>
             <Greet>Hey, I'm</Greet>
