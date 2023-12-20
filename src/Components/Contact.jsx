@@ -1,16 +1,12 @@
 import {
   faMailBulk,
   faMap,
-  faMapLocationDot,
-  faMapPin,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
-import PortfolioLogo from "../assets/logo.png";
 import styleConstants from "../Common/StyleConstants";
-import StyleConstants from "../Common/StyleConstants";
 
 const Contact = () => {
   const ContactContainer = styled.div`
